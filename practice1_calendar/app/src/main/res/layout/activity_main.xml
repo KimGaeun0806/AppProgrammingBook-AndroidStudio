@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <CalendarView
+        android:id="@+id/calenderView"
+        android:layout_width="414dp"
+        android:layout_height="362dp"
+
+
+        android:focusedMonthDateColor="#FFFFFF"
+        android:selectedWeekBackgroundColor="#FFFFFF"
+        android:unfocusedMonthDateColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.666"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.01" />
+
+    <Button
+        android:id="@+id/저장"
+        android:layout_width="0dp"
+        android:layout_height="44dp"
+        android:layout_marginBottom="40dp"
+        android:background="#FFFFFF"
+        android:text="저장"
+        app:backgroundTint="@color/teal_200"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/calenderView"
+        app:layout_constraintVertical_bias="0.839"
+        android:visibility="invisible"/>
+
+    <EditText
+        android:id="@+id/입력"
+        android:layout_width="0dp"
+        android:layout_height="220dp"
+        android:background="#E0EAE9"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="일정을 입력하세요"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/저장"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/calenderView"
+        app:layout_constraintVertical_bias="0.183"
+        android:visibility="invisible"/>
+
+    <Button
+        android:id="@+id/수정"
+        android:layout_width="0dp"
+        android:layout_height="44dp"
+        android:layout_marginBottom="40dp"
+        android:text="수정"
+        android:visibility="invisible"
+        app:backgroundTint="@color/teal_200"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/calenderView"
+        app:layout_constraintVertical_bias="0.839" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="0dp"
+        android:layout_height="220dp"
+        android:background="#E0EAE9"
+        android:gravity="center"
+        app:layout_constraintBottom_toTopOf="@+id/저장"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/calenderView"
+        app:layout_constraintVertical_bias="0.183" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
